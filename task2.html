@@ -6,10 +6,17 @@
   <title>Webpage</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    *{
+    * {
       padding: 0;
       margin: 0;
       box-sizing: border-box;
+    }
+    #header, #footer {
+      height: auto; 
+    }
+    #content {
+      position: relative;
+      top: -50px;
     }
   </style>
 </head>
@@ -18,10 +25,9 @@
     <object data="header.html" type="text/html" width="100%" height="100px"></object>
   </section>
 
-  <section id="content" style=" position: relative; top: -50px;" >
-
-      <div class="row" style="display: flex;" >
-        <div class="col-md-4" >
+  <section id="content">
+    <div class="row" style="display: flex;">
+      <div class="col-md-4">
         <section id="menu">
           <object data="menu.html" type="text/html" width="100%" height="500px"></object>
         </section>
@@ -32,11 +38,10 @@
         </section>
       </div>
     </div>
-
   </section>
 
-  <section id="footer" style="  position: relative; top: -50px;">
-    <object data="footer.html" type="text/html" width="100%" height="100px"></object>
+  <section id="footer">
+    <object data="footer.html" type="text/html" width="100%" height="500px" ></object>
   </section>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
